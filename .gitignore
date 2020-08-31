@@ -1,0 +1,14 @@
+#font
+assets/font/
+# sass files
+css/style.scss
+css/style.css.map
+# icons
+assets/icons/icon-clean-squared.png
+assets/icons/icon-energy-squared.png
+assets/icons/icon-reduce.svg
+assets/icons/icon-reduce-squared.png
+assets/icons/icon1.png
+assets/icons/icon2.png
+assets/icons/icon3.png
+assets/icons/icons.svg

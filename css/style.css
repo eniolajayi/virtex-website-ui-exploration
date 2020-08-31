@@ -1,0 +1,275 @@
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-size: 100%;
+  line-height: 1.6;
+  vertical-align: baseline;
+  font-family: 'Poppins', sans-serif;
+}
+
+a {
+  color: #333333;
+  text-decoration: none;
+}
+
+img {
+  width: 100%;
+}
+
+h1 {
+  display: block;
+}
+
+.header {
+  width: 100%;
+  height: 50px;
+  padding: 0 3%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 40px;
+  position: absolute;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  z-index: 7;
+}
+
+.header .logo {
+  font-size: 22px;
+  font-weight: 600;
+}
+
+.header .nav .nav-link {
+  font-size: 16px;
+  font-weight: 600;
+  color: rgba(0, 0, 0, 0.514);
+  margin-right: 40px;
+}
+
+.header .nav .nav-menu-btn {
+  width: 25px;
+  cursor: pointer;
+}
+
+.main {
+  width: 100%;
+  display: -ms-grid;
+  display: grid;
+  position: relative;
+  -ms-grid-rows: auto;
+      grid-template-rows: auto;
+  -ms-grid-columns: (1fr)[12];
+      grid-template-columns: repeat(12, 1fr);
+}
+
+.content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-left: 10%;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 7;
+  grid-column: 1 / 8;
+  position: relative;
+  padding-bottom: 42px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.content-body__heading {
+  width: 55%;
+  font-size: 48px;
+  margin: 35% 0;
+}
+
+.content-body__features {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.content-body__features .feature {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  display: none;
+}
+
+.content-body__features .feature-heading {
+  font-size: 18px;
+  font-weight: normal;
+}
+
+.content-body__features .feature-img {
+  width: 50px;
+  height: 40px;
+}
+
+.bg-img {
+  -ms-grid-column: 8;
+  -ms-grid-column-span: 5;
+  grid-column: 8 / 13;
+  background-size: cover;
+  background-position: center;
+  background-image: url("../assets/images/background.jpg");
+}
+
+.intro {
+  height: 440px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: absolute;
+  -ms-flex-item-align: center;
+      align-self: center;
+  margin-left: 16.65%;
+  justify-self: center;
+}
+
+.intro-img {
+  width: 270px;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url("../assets/images/turbine.jpg");
+}
+
+.intro-body {
+  width: 270px;
+  color: #fff;
+  text-align: left;
+  background-color: #000;
+  padding: 50px 30px 30px 30px;
+}
+
+.intro-body .intro-body__heading {
+  width: 100%;
+  margin-bottom: 30px;
+}
+
+.intro-body .intro-body__paragraph {
+  color: rgba(255, 255, 255, 0.63);
+  margin-bottom: 66px;
+}
+
+.intro-body .btn {
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+}
+
+@media (max-width: 1024px) {
+  .header {
+    margin-top: 15px;
+  }
+  .main {
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+    -ms-grid-rows: 100vh 100vh;
+        grid-template-rows: 100vh 100vh;
+  }
+  .content {
+    width: 100%;
+    padding-left: 0;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 12;
+    grid-column: 1 / 13;
+  }
+  .content-body__heading {
+    text-align: center;
+    margin: 15% auto;
+  }
+  .content-body__features {
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+  }
+  .bg-img {
+    width: 100%;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 12;
+    grid-column: 1 / 13;
+  }
+  .intro {
+    -ms-flex-item-align: end;
+        -ms-grid-row-align: end;
+        align-self: end;
+    margin-left: 0;
+    margin-bottom: 80px;
+  }
+}
+
+@media (max-width: 495px) {
+  .header {
+    position: relative;
+  }
+  .header .nav .nav-link {
+    display: none;
+  }
+  .content-body__heading {
+    width: 90%;
+    margin: 20% auto;
+    font-size: 36px;
+  }
+  .intro {
+    height: 660px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .intro > * {
+    width: 100%;
+  }
+  .intro-img {
+    background-position: top center;
+  }
+}
+
+.btn {
+  width: 100%;
+  height: 55px;
+  color: #000;
+  display: block;
+  line-height: 55px;
+  text-align: center;
+  border-radius: 2px;
+  background: #ffffff;
+  text-transform: uppercase;
+  -webkit-box-shadow: inset 0px -3px 2px 0px rgba(0, 0, 0, 0.137);
+          box-shadow: inset 0px -3px 2px 0px rgba(0, 0, 0, 0.137);
+}
+
+/*
+FIX: To adjust a particular icon width
+-- the icons used were designed by me and am no
+-- icon designer. this fixes a width problem for one of 
+-- the icons. 
+*/
+.fix-icon {
+  width: 45px;
+}
+/*# sourceMappingURL=style.css.map */
