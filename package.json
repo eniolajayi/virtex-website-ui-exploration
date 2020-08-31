@@ -1,0 +1,22 @@
+{
+  "name": "virtex-website-ui-exploration",
+  "version": "1.0.0",
+  "description": "a website ",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/eniolajayi/virtex-website-ui-exploration.git"
+  },
+  "author": "Eniola Ajayi",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/eniolajayi/virtex-website-ui-exploration/issues"
+  },
+  "homepage": "https://github.com/eniolajayi/virtex-website-ui-exploration#readme",
+  "dependencies": {
+    "animate.css": "^4.1.0"
+  }
+}
